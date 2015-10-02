@@ -16,9 +16,3 @@ Package.onUse(function(api) {
   api.export('mysql', 'server');
 });
 
-// TODO
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('mysql');
-  api.addFiles('mysql-tests.js');
-});
