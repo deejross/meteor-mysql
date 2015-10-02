@@ -10,14 +10,14 @@ Installation
 meteor add deejross:mysql
 ```
 
-OR
+OR install the package manually if (like me) you can't use ```meteor add```.
 
 ```
 mkdir packages
 cd packages
 git clone https://github.com/deejross/meteor-mysql.git
 cd ..
-meteor add meteor-mysql
+meteor add deejross:meteor-mysql
 ```
 
 Usage
