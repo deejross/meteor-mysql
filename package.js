@@ -1,24 +1,24 @@
 Package.describe({
   summary: "MySQL Client integration for Meteor",
-  version: "0.1.0",
-  name: "pcel:mysql",
-  git: "https://github.com/pcel/meteor-mysql",
+  version: "2.9.0",
+  name: "deejross:mysql",
+  git: "https://github.com/deejross/meteor-mysql",
   original: "https://github.com/felixge/node-mysql"
 });
 
 Npm.depends({
-  mysql: "2.4.3",
+  mysql: "2.9.0",
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0');
-  api.addFiles('pcel:mysql.js', 'server');
+  api.addFiles('mysql.js', 'server');
   api.export('mysql', 'server');
 });
 
 // TODO
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('pcel:mysql');
-  api.addFiles('pcel:mysql-tests.js');
+  api.use('mysql');
+  api.addFiles('mysql-tests.js');
 });
